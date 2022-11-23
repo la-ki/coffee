@@ -3,7 +3,7 @@ import apiEndpoints from '../apiEndpoints';
 export const updateUser = async (userData, _id) => {
   console.log(userData, _id);
   const response = await fetch(
-    `http://localhost:3000${apiEndpoints.userUpdate}`,
+    `${apiEndpoints.userUpdate}`,
     {
       method: 'PATCH',
       body: JSON.stringify({ userData, _id }),
