@@ -6,7 +6,7 @@ export const getAllProducts = async (
   filter = 'asc'
 ) => {
   const response = await fetch(
-    `http://localhost:3000${apiEndpoints.products}?pageIndex=${pageIndex}&category=${category}&filterType=${filter}`
+    `${apiEndpoints.products}?pageIndex=${pageIndex}&category=${category}&filterType=${filter}`
   );
 
   const data = await response.json();
