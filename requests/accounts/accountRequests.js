@@ -12,7 +12,7 @@ export const createUser = async (
   postcode
 ) => {
   const response = await fetch(
-    `http://localhost:3000${apiEndpoints.account.createUser}`,
+    `${apiEndpoints.account.createUser}`,
     {
       method: 'POST',
       body: JSON.stringify({
