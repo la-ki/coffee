@@ -1,7 +1,7 @@
 import apiEndpoints from '../apiEndpoints';
 
 export const postOrder = async (orderData) => {
-  const response = await fetch(`http://localhost:3000${apiEndpoints.order}`, {
+  const response = await fetch(`${apiEndpoints.order}`, {
     method: 'POST',
     body: JSON.stringify(orderData),
     headers: {
