@@ -2,7 +2,7 @@ import apiEndpoints from '../apiEndpoints';
 
 export const getProductsByCategory = async (categoryName) => {
   const response = await fetch(
-    `http://localhost:3000${apiEndpoints.productsByCategory}${categoryName}`
+    `${apiEndpoints.productsByCategory}${categoryName}`
   );
 
   const data = await response.json();
