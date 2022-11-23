@@ -2,7 +2,7 @@ import apiEndpoints from '../apiEndpoints';
 
 export const postQuestion = async (questionData) => {
   const response = await fetch(
-    `http://localhost:3000${apiEndpoints.question}`,
+    `${apiEndpoints.question}`,
     {
       method: 'POST',
       body: JSON.stringify(questionData),
